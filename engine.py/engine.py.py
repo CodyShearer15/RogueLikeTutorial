@@ -2,11 +2,11 @@ import tcod as libtcod
 
 from input_handlers import handle_keys
 
-
+#run this method as main program
 def main():
     screen_width = 80
     screen_height = 50
-
+    #center player at start of game
     player_x = int(screen_width / 2)
     player_y = int(screen_height / 2)
 
@@ -15,7 +15,7 @@ def main():
     libtcod.console_init_root(screen_width, screen_height, 'libtcod tutorial revised', False)
 
     con = libtcod.console_new(screen_width, screen_height)
-
+    #movement key and mouse links
     key = libtcod.Key()
     mouse = libtcod.Mouse()
 
